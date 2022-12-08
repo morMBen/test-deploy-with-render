@@ -5,7 +5,7 @@ import { indexRoute } from './routes/index.router.js';
 // import { getAllUsers, findUser, addUser } from './utils.js';
 
 const app = express();
-const PORT = process.env.PORT | '8000';
+const PORT = process.env.PORT || '8000';
 console.log(process.env.PORT);
 
 app.use(express.json());
